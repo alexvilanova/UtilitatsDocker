@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y tzdata gcc \
     && rm -rf /var/lib/apt/lists/* 
 
 COPY *.py ./
-COPY templates templates/
-EXPOSE 9981/tcp
+#COPY templates templates/
+EXPOSE 9982/tcp
 ENTRYPOINT [ "uwsgi" ]
 CMD [ "--socket", "0.0.0.0:9982", "--protocol=http", "--wsgi", "wsgi:app" ]

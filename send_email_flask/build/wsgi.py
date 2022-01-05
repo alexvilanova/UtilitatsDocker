@@ -1,4 +1,4 @@
-from mayler_app import app
+from contact import app
 
 #
 # Main que farà servir wsgi per desplegar l'aplicació

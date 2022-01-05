@@ -1,8 +1,8 @@
 version: '3.1'
 
 services:
-  mailer:
+  contact:
     build: ./build
-    hostname: mailer
+    hostname: contact
     ports:
       - 9982:9982
